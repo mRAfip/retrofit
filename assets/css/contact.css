@@ -1,0 +1,134 @@
+
+
+/*  muhammed */
+
+
+/************ TABLE OF CONTENTS ***************
+
+1. Reset
+2. Global colors
+
+
+
+
+**********************************************/
+
+
+
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+ ***/
+
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/*** 
+
+
+====================================================================
+	Global 
+====================================================================
+
+
+ ***/
+
+ :root {
+
+    --brand-green: #05D3AA;
+    --brand-blue: #0E51AC;
+  }
+
+
+
+  body {
+    font-family: 'Inter' !important;
+}
+
+
+
+/*** 
+
+
+====================================================================
+	about 
+====================================================================
+
+
+ ***/
+
+
+/* Full-width header section */
+.header-section_contact {
+    background: url('../img/contact-bg.jpg') center/cover;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 130px;
+    
+}
+
+
+
+
+.icon-box {
+    background-color: #F1B209;
+    color: white;
+
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-column {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    flex-direction: column;
+}
+
+.right-column-item{
+
+    display: flex;
+    align-items: center;
+}
+.overlay_contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(19, 23, 255, 0.4);
+    border-radius: 0 0 200px   0;
+}
+
+.form-control{
+
+    background-color: transparent !important;
+    height: 60px;
+    color: #fff !important;
+}
+
+.contact_btn{
+
+    background-color: #F1B209 !important;
+    border-radius: 10px !important;
+}

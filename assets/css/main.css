@@ -1,0 +1,777 @@
+
+
+/*  muhammed */
+
+
+/************ TABLE OF CONTENTS ***************
+
+1. Reset
+2. Global colors
+3. navigation
+4. start chalenges we solve
+5. 	start company details
+
+
+
+**********************************************/
+
+
+
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+ ***/
+
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/*** 
+
+
+====================================================================
+	Global 
+====================================================================
+
+
+ ***/
+
+ :root {
+
+    --brand-green: #05D3AA;
+    --brand-blue: #0E51AC;
+  }
+
+
+
+  /* @font-face {
+    font-family: 'myfont';
+    src: url('../font/Helvetica\ Neue\ Medium\ Extended.ttf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal;  
+} */
+
+
+
+  body {
+    font-family: 'Red Hat Display' !important;
+    /* font-family: 'myfont' !important; */
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS to Style the Floating Button  */
+
+    .whatsapp-float-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #26CC64; /* WhatsApp green */
+        border-radius: 50%;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        font-size: 1.2rem;
+    }
+
+    .whatsapp-float-btn i {
+        
+    }
+
+    .whatsapp-float-btn:hover {
+        background-color: #128C7E; /* Darker green on hover */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+
+
+
+
+
+/*** 
+
+
+====================================================================
+	navigation
+====================================================================
+
+
+ ***/
+
+
+.navbar-content{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.logo{
+
+    height: 80px;
+}
+
+
+   /* Initial transparent navbar */
+   .navbar-custom {
+    transition: all 0.3s ease-in-out;
+}
+/* Navbar after scrolling */
+.navbar-custom.scrolled {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav, .bottom-nav {
+    padding: 15px 15px;
+    transition: padding 0.3s ease-in-out;
+}
+
+
+
+/* Top navbar styling */
+.top-nav {
+   
+    font-size: 14px;
+    border-bottom: solid 1px #ffffff3d;
+    
+}
+
+.top-nav-item{
+
+    height: 40px;
+    gap: 8px;
+
+}
+.top-nav-item-left{
+    height: 40px;
+}
+
+.top-nav-item-icon{
+
+    font-size: 2rem;
+
+    color: var(--brand-green);
+}
+.top-nav-item-link{
+
+    color: #fff !important;
+    font-size: 1rem;
+}
+
+/* Bottom navbar */
+
+
+
+
+.bottom-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.bottom-nav .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+    /* Default state of nav-link */
+    .bottom-nav .nav-link {
+        color: #fff; /* Default text color */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* On hover, background color changes */
+    .bottom-nav .nav-link:hover {
+        background-color: var(--brand-green); /* Change this to your desired background color */
+        color: white !important; /* Text color when active */
+        border-radius: 5px;
+    }
+
+    /* When a link is clicked, active class gets added */
+    .bottom-nav .nav-link.active {
+        background-color: var(--brand-green); /* Change this to your desired background color */
+        color: white !important; /* Text color when active */
+        border-radius: 5px;
+    }
+
+    /* When the link is focused (clicked or tabbed) */
+    .bottom-nav .nav-link:focus {
+        background-color: var(--brand-green); /* Change this to your desired background color */
+        color: white !important; /* Text color when active */
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+
+    /* dropdown-item animation */
+
+
+     /* Style the dropdown item and ensure it has a relative position */
+        .dropdown-item {
+            position: relative;
+            padding: 10px 15px !important;
+        }
+
+        .dropdown-item:hover{
+
+            background-color: #fff !important;
+        }
+
+        /* On hover, add a small green line under the item */
+        .dropdown-item:hover::after {
+            content: "";
+            position: absolute;
+            bottom: 0; /* Position the line at the bottom of the item */
+            left:38px; /* Center the line horizontally */
+            transform: translateX(-50%); /* Offset to truly center the line */
+            width: 50px; /* Width of the line */
+            height: 2px; /* Height of the line */
+            background-color: var(--brand-green); /* Color of the line */
+            transition: width 0.3s ease; /* Smooth transition for the line's appearance */
+        }
+
+
+                /* On hover, add a small green line under the item */
+        .sub-menu .dropdown-item:hover::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0; /* Position the line at the bottom of the item */
+                    left:38px; /* Center the line horizontally */
+                    transform: translateX(-50%); /* Offset to truly center the line */
+                    width: 50px; /* Width of the line */
+                    height: 2px; /* Height of the line */
+                    background-color: var(--brand-green); /* Color of the line */
+                    transition: width 0.3s ease; /* Smooth transition for the line's appearance */
+                }
+
+        /* Optional: Change text color on hover (for a better hover effect) */
+        .dropdown-item:hover {
+            color: #007bff; /* Change text color when hovered */
+        }
+
+        /* Handle the dropdown-menu submenu properly */
+        .dropdown-menu {
+            padding-left: 20px; /* Add a bit of space for submenus */
+        }
+
+
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -10px !important;
+    display: none;
+    position: absolute;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+
+/* White "Get a Quote" button */
+.quote-btn {
+    background-color: var(--brand-green) !important;
+    border-radius: 100px;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.quote-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Full-width header section */
+.header-section {
+    background: url('../img/banner1.jpeg') center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+
+
+
+
+/* Adjust navbar for better readability when scrolled */
+.navbar-custom.scrolled .bottom-nav .nav-link,
+.navbar-custom.scrolled .quote-btn {
+    color: #333 !important;
+}
+
+.navbar-custom.scrolled .top-nav
+ {
+    padding: 0px 15px; /* Reduced padding when scrolled */
+
+}
+
+.navbar-custom.scrolled .top-nav-item-link
+ {
+    color: #333 !important;
+}
+
+
+
+
+
+/* this is for mobile menu */
+
+
+
+
+
+
+
+
+
+/*** 
+
+
+====================================================================
+	header
+====================================================================
+
+
+ ***/
+
+
+.header-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    border-radius: 0 0 200px   0;
+}
+
+
+
+
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0 0 200px   0;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 200px   0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 23, 255, 0.2);
+    /* background: rgba(255, 255, 255, 0.2); */
+    border-radius: 0 0 200px   0;
+}
+
+.content-header {
+    position: relative;
+    z-index: 2; /* Keep content above the video */
+    color: white;
+    max-width: 600px;
+    margin-left: 5%; /* Align left */
+}
+
+.content-header h1{
+
+    font-size: 4rem;
+    font-weight: 900;
+    width: 50%;
+}
+
+.content-header p{
+
+    opacity: 0.6;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.contact-btn{
+
+    background-color: transparent;
+
+    width: fit-content;
+    margin-top: 2%;
+}
+
+.contact-btn .left{
+
+    background-color: var(--brand-green) !important;
+
+    border-radius: 100px 0  0 100px;
+    padding: 25px 20px;
+    border: none;
+    color: #fff !important;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.contact-btn .right{
+
+    background-color: var(--brand-blue) !important;
+
+    border-radius: 0 100px  100px 0;
+    padding: 25px 20px;
+    border: none;
+    color: #fff !important;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+.contact-btn span{
+
+    background-color: var(--brand-blue);
+}
+
+
+
+
+
+/*** 
+
+
+====================================================================
+	start chalenges we solve
+====================================================================
+
+
+ ***/
+
+
+ .chalenges_section{
+
+    padding: 100px 0;
+ }
+
+ .chalenges_section_title{
+
+    font-size: 3rem;
+    font-weight: 600;
+ }
+
+ .challenge-item-icon {
+
+
+
+    font-size: 3rem;
+    color: var(--brand-green);
+
+ }
+
+ .line {
+     width: 50px;
+     height: 3px;
+     background-color: var(--brand-green);
+     margin: 10px auto;
+ }
+
+
+
+
+ /*** 
+
+
+====================================================================
+	start company details
+====================================================================
+
+
+ ***/
+
+ 
+ .company-details {
+
+    background: linear-gradient(to right, #F1F1F1, #fff); /* From left to right */
+    margin-top: 100px;
+
+
+
+ }
+
+ .about_section{
+    background-color: #fff;
+    padding-bottom: 100px;
+    border-radius: 0 0 0 200px;
+
+ }
+
+
+/* about section */
+
+
+ .about-div-content {
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 0 200px;
+
+}
+@media (min-width: 992px) { /* Large screens */
+    .about-section {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+.about_text{
+
+    width: 80%;
+    font-size: 3rem;
+    font-weight: 600;
+
+    
+}
+
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.about-content {
+    padding: 20px;
+    text-align: left;
+}
+
+
+.highlight-text {
+    color: var(--brand-green);
+    font-weight: bold;
+}
+
+.about-content p {
+    width: 80%;
+}
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+.feature-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.feature-list i {
+    color: var(--brand-green);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* vision section */
+
+.section_misson{
+    border-radius: 0 0 0 200px;
+    background-color: #F1F1F1;
+
+}
+
+
+.div_mission{
+
+    padding: 150px 0;
+    background-color: transparent;
+
+  
+
+}
+
+
+.mission_card{
+    position: relative; /* Ensures proper placement */
+    border-radius: 25px;
+    width: 400px;
+    height: 300px;
+    background-image: url('../img/vision_img.jpg');
+    background-size: cover; /* Makes the image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes content to the bottom */
+}
+
+.mision_item p{
+
+    width: 85%;
+}
+
+.mision_card_content{
+
+    background-color:rgba(5, 211, 170, 0.7); /* 0.5 represents 50% opacity */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    color: #fff;
+    border-radius:0 0 25px 25px ;
+
+
+}
+
+
+
+/* company_high_light  section*/
+
+
+.company_high_light{
+
+
+    background-color: var(--brand-blue);
+    padding: 100px 0;
+    border-radius: 200px 0 0 0 ;
+
+
+}
+
+.company_high_light_content{
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.icon_container{
+
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #05D3AA;
+    border-radius: 100px;
+}
+.company_high_light_content_icon{
+
+        color: #fff;
+        font-size:3rem ;
+
+}
+
+
+
+
+ /*** 
+
+
+====================================================================
+	start testimonial section
+====================================================================
+
+
+ ***/
+
+
+ .testimonial{
+
+    padding: 200px 0;
+ }
+
+ .head{
+
+    width: 50%;
+ }
+
+ .testi_card{
+
+
+    background-color: #F1F1F1;
+    padding: 50px;
+ }
+ 
+ .text-warning{
+
+    font-size: 1.5rem;
+ }
+
+ .rounded-circle{
+
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+ }
+
+
+
+
+  /*** 
+
+
+====================================================================
+	footer
+====================================================================
+
+
+ ***/
+
+
+ .footer {
+    position: relative;
+    background: url('../img/footer-banner.jpg') no-repeat center center/cover;
+    color: white;
+    background-size: cover; /* Makes the image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.footer .container {
+    position: relative;
+    z-index: 1;
+}
