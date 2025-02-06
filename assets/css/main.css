@@ -471,6 +471,29 @@
 
 
 
+@media only screen and (max-width: 768px) {
+   
+    .content-header{
+
+        padding-left: 40px !important;
+    }
+    .content-header h1{
+
+        font-size: 3rem;
+        font-weight: 900;
+        width: 80%;
+    }
+
+    .content-header p{
+
+        opacity: 0.9;
+        width:80%;
+        margin-top: 2%;
+    }
+}
+
+
+
 
 /*** 
 
@@ -558,6 +581,11 @@
         text-align: left;
     }
 }
+
+
+
+
+
 
 .about_text{
 
@@ -699,6 +727,36 @@
 
 
 
+@media only screen and (max-width: 768px) { 
+
+
+    .about-div-content{
+
+        flex-direction: column;
+    }
+
+    .div_mission{
+
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+
+    }
+
+    .mision_item p, h4{
+
+        width: 100% !important;
+    }
+
+    .mission_card{
+
+        width: 100% !important;
+    }
+
+}
+
+
 
  /*** 
 
@@ -719,6 +777,21 @@
  .head{
 
     width: 50%;
+ }
+
+ @media only screen and (max-width: 768px) {  
+
+    .head{
+
+        width: 100%;
+        padding-left: 20px;
+     }
+
+     .testi_card{
+
+        margin-bottom: 10px;
+     }
+
  }
 
  .testi_card{
