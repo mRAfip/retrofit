@@ -68,7 +68,7 @@
 
 /* Full-width header section */
 .header-section_contact {
-    background: url('../img/contact-bg.jpg') center/cover;
+    background-color: var(--brand-blue);
 
     height: 100vh;
     display: flex;
@@ -76,9 +76,28 @@
     justify-content: center;
     color: white;
     padding-top: 130px;
+    border-radius: 0 0 200px 0;
+    
     
 }
 
+
+@media only screen and (max-width: 768px) { 
+
+    .navbar-toggler{
+
+        background-color: #fff !important;
+        
+    }
+
+
+    .right-column{
+
+        visibility: none !important;
+    }
+        
+   
+}
 
 
 
@@ -117,7 +136,7 @@
     height: 100%;
     /* background: rgba(0, 0, 0, 0.5); */
     background: rgba(19, 23, 255, 0.4);
-    border-radius: 0 0 200px   0;
+    border-radius: 0 0 200px 0;
 }
 
 .form-control{

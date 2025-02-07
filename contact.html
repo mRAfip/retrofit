@@ -30,133 +30,151 @@
 <body>
 
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-            <div class="container navbar-content">
-                <!-- Top Section -->
-                <div class="d-flex w-100 justify-content-between align-items-center top-nav">
-                    <!-- Left Section: Logo -->
-                    <div class="ms-3">
-                        <a href="index.html" class="navbar-brand">
-                            <img class="logo" src="./assets/img/logo-light.png" />
-                        </a>
-                    </div>
-                
-                    <!-- Right Section: Contact Info -->
-                    <div class="me-3 d-none d-md-flex gap-5">
-                        <!-- item 1 -->
-                        <span class="nav-link top-nav-item d-flex ">
-                            <div class="top-nav-item-left d-flex align-items-center">
-                                <i class="fas fa-phone top-nav-item-icon"></i>
-                            </div>
-                           
-                            <div class="d-flex flex-column align-items-start top-nav-item-left">
-                                <span class="small top-nav-item-link">Give us a call</span>
-                                <span class="top-nav-item-link">+91 9495 126 256</span>
-                            </div>
-                           
-                        </span>
-    
-                         <!-- item 2 -->
-                         <span class="nav-link top-nav-item d-flex ">
-                            <div class="top-nav-item-left d-flex align-items-center">
-                                <i class="fa-solid fa-map-location-dot  top-nav-item-icon"></i>
-                            </div>
-                           
-                            <div class="d-flex flex-column align-items-start top-nav-item-left">
-                                <span class="small top-nav-item-link">Come & Visit us</span>
-                                <span class="top-nav-item-link">Covai Tech Park,Coimbatore 641014</span>
-                            </div>
-                           
-                        </span>
-    
-                         <!-- item 1 -->
-                         <span class="nav-link top-nav-item d-flex ">
-                            <div class="top-nav-item-left d-flex align-items-center">
-                                
-                                <i class="fa-regular fa-envelope top-nav-item-icon"></i>
-                            </div>
-                           
-                            <div class="d-flex flex-column align-items-start top-nav-item-left">
-                                <span class="small top-nav-item-link">Emain us</span>
-                                <span class="top-nav-item-link">info@rettrofit.com</span>
-                            </div>
-                           
-                        </span>
-                
-                    </div>
+    <!-- Navbar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container navbar-content">
+            <!-- Top Section -->
+            <div class="top-nav d-flex align-items-center justify-content-between w-100">
+                <!-- Left Section: Logo -->
+                <div class="ms-3">
+                    <a href="index.html" class="navbar-brand">
+                        <img class="logo" src="./assets/img/logo-light.png" />
+                    </a>
                 </div>
-                
     
-                <!-- Bottom Navbar -->
-                <div class="container px-3 bottom-nav">
+                <!-- Right Section: Contact Info, only visible on large screens -->
+                <div class="me-3 d-none d-lg-flex align-items-center top-nav-right-items">
+                    <!-- item 1 -->
+                    <span class="nav-link top-nav-item d-flex align-items-center me-3">
+                        <div class="top-nav-item-left d-flex align-items-center">
+                            <i class="fas fa-phone top-nav-item-icon"></i>
+                        </div>
+                        <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
+                            <span class="small top-nav-item-link">Give us a call</span>
+                            <span class="top-nav-item-link">+91 9495 126 256</span>
+                        </div>
+                    </span>
+    
+                    <!-- item 2 -->
+                    <span class="nav-link top-nav-item d-flex align-items-center me-3">
+                        <div class="top-nav-item-left d-flex align-items-center">
+                            <i class="fa-solid fa-map-location-dot top-nav-item-icon"></i>
+                        </div>
+                        <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
+                            <span class="small top-nav-item-link">Come & Visit us</span>
+                            <span class="top-nav-item-link">Covai Tech Park, Coimbatore 641014</span>
+                        </div>
+                    </span>
+    
+                    <!-- item 3 -->
+                    <span class="nav-link top-nav-item d-flex align-items-center me-3">
+                        <div class="top-nav-item-left d-flex align-items-center">
+                            <i class="fa-regular fa-envelope top-nav-item-icon"></i>
+                        </div>
+                        <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
+                            <span class="small top-nav-item-link">Email us</span>
+                            <span class="top-nav-item-link">info@rettrofit.com</span>
+                        </div>
+                    </span>
+                </div>
+    
+                <!-- Right Section: Menu Button for Mobile -->
+                <div class="d-lg-none">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            
-                            <!-- Products Dropdown with Submenus -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
-                                    Products
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Product 1</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Sub Product 1.1</a></li>
-                                            <li><a class="dropdown-item" href="#">Sub Product 1.2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Product 2</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Sub Product 2.1</a></li>
-                                            <li><a class="dropdown-item" href="#">Sub Product 2.2</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                    
-                            <!-- Services Dropdown with Submenus -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Service 1</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Sub Service 1.1</a></li>
-                                            <li><a class="dropdown-item" href="#">Sub Service 1.2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Service 2</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Sub Service 2.1</a></li>
-                                            <li><a class="dropdown-item" href="#">Sub Service 2.2</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                    
-                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                        </ul>
-                        <a href="#" class="quote-btn">Get a Quote</a>
-                    </div>
                 </div>
             </div>
-        </nav>
+    
+            <!-- Bottom Navbar -->
+            <div class="container px-3 bottom-nav">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        
+                        <!-- Products Dropdown with Submenus -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="contact.html" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="contact.html">Comprehensive Analysis</a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li><a class="dropdown-item" href="contact.html">Inspection</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Data Acquisition</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="contact.html">CAD Model Creation</a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li><a class="dropdown-item" href="contact.html">3D Modeling</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">FEA Analysis</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="contact.html">Manufacturing</a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li><a class="dropdown-item" href="contact.html">Precise Manufacturing</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Quality Control</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="contact.html">Casting process. Investment casting</a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li><a class="dropdown-item" href="contact.html">Pattern Making</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Shell Mold Creation</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Wax Removal</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Metal Pouring</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Cooling and Solidification</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Shell Removal</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Finishing and Inspection</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <!-- Services Dropdown with Submenus -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="contact.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="contact.html">Service 1</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="contact.html">Sub Service 1.1</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Sub Service 1.2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="contact.html">Service 2</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="contact.html">Sub Service 2.1</a></li>
+                                        <li><a class="dropdown-item" href="#">Sub Service 2.2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li class="nav-item"><a class="nav-link" href="contact.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <a href="contact.html" class="quote-btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     
         <!-- Header Section -->
         <header class="header-section_contact">
             <div class="video-container">
                
-                <div class="overlay_contact"></div>
+                <!-- <div class="overlay_contact"></div> -->
             </div>
             <div class="container content-contact mt-5 position-relative">
 
@@ -193,7 +211,7 @@
                     </div>
         
                     <!-- Right Column: Contact Info -->
-                    <div class="col-md-6 right-column">
+                    <div class="col-md-6 d-sm-none right-column">
                         <div class="mb-3 right-column-item">
                             
                             <a><strong>Address:</strong> 123 Main Street, City, Country</a>
@@ -214,6 +232,14 @@
                
             </div>
         </header>
+
+
+
+
+            <!-- footer  -->
+
+
+
     
 
         <script>

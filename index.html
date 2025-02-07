@@ -26,7 +26,7 @@
 
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float-btn">
+    <a href="https://wa.me/9495126256" target="_blank" class="whatsapp-float-btn">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
@@ -36,68 +36,65 @@
 
 
     <!-- Navbar -->
+
+
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container navbar-content">
             <!-- Top Section -->
-            <div class="d-flex w-100 justify-content-between align-items-center top-nav">
+            <div class="top-nav d-flex align-items-center justify-content-between w-100">
                 <!-- Left Section: Logo -->
                 <div class="ms-3">
                     <a href="index.html" class="navbar-brand">
                         <img class="logo" src="./assets/img/logo-light.png" />
                     </a>
                 </div>
-            
-                <!-- Right Section: Contact Info -->
-                <div class="me-3 d-none d-md-flex gap-5">
+    
+                <!-- Right Section: Contact Info, only visible on large screens -->
+                <div class="me-3 d-none d-lg-flex align-items-center top-nav-right-items">
                     <!-- item 1 -->
-                    <span class="nav-link top-nav-item d-flex ">
+                    <span class="nav-link top-nav-item d-flex align-items-center me-3">
                         <div class="top-nav-item-left d-flex align-items-center">
                             <i class="fas fa-phone top-nav-item-icon"></i>
                         </div>
-                       
-                        <div class="d-flex flex-column align-items-start top-nav-item-left">
+                        <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
                             <span class="small top-nav-item-link">Give us a call</span>
                             <span class="top-nav-item-link">+91 9495 126 256</span>
                         </div>
-                       
                     </span>
-
-                     <!-- item 2 -->
-                     <span class="nav-link top-nav-item d-flex ">
+    
+                    <!-- item 2 -->
+                    <span class="nav-link top-nav-item d-flex align-items-center me-3">
                         <div class="top-nav-item-left d-flex align-items-center">
-                            <i class="fa-solid fa-map-location-dot  top-nav-item-icon"></i>
+                            <i class="fa-solid fa-map-location-dot top-nav-item-icon"></i>
                         </div>
-                       
-                        <div class="d-flex flex-column align-items-start top-nav-item-left">
+                        <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
                             <span class="small top-nav-item-link">Come & Visit us</span>
-                            <span class="top-nav-item-link">Covai Tech Park,Coimbatore 641014</span>
+                            <span class="top-nav-item-link">Covai Tech Park, Coimbatore 641014</span>
                         </div>
-                       
                     </span>
-
-                     <!-- item 1 -->
-                     <span class="nav-link top-nav-item d-flex ">
+    
+                    <!-- item 3 -->
+                    <span class="nav-link top-nav-item d-flex align-items-center me-3">
                         <div class="top-nav-item-left d-flex align-items-center">
-                            
                             <i class="fa-regular fa-envelope top-nav-item-icon"></i>
                         </div>
-                       
-                        <div class="d-flex flex-column align-items-start top-nav-item-left">
-                            <span class="small top-nav-item-link">Emain us</span>
+                        <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
+                            <span class="small top-nav-item-link">Email us</span>
                             <span class="top-nav-item-link">info@rettrofit.com</span>
                         </div>
-                       
                     </span>
-            
+                </div>
+    
+                <!-- Right Section: Menu Button for Mobile -->
+                <div class="d-lg-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </div>
-            
-
+    
             <!-- Bottom Navbar -->
             <div class="container px-3 bottom-nav">
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -122,7 +119,7 @@
                                         <li><a class="dropdown-item" href="contact.html">FEA Analysis</a></li>
                                     </ul>
                                 </li>
-
+    
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item dropdown-toggle" href="contact.html">Manufacturing</a>
                                     <ul class="dropdown-menu sub-menu">
@@ -130,7 +127,7 @@
                                         <li><a class="dropdown-item" href="contact.html">Quality Control</a></li>
                                     </ul>
                                 </li>
-
+    
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item dropdown-toggle" href="contact.html">Casting process. Investment casting</a>
                                     <ul class="dropdown-menu sub-menu">
@@ -143,11 +140,9 @@
                                         <li><a class="dropdown-item" href="contact.html">Finishing and Inspection</a></li>
                                     </ul>
                                 </li>
-
-                            
                             </ul>
                         </li>
-                
+                    
                         <!-- Services Dropdown with Submenus -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="contact.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
@@ -170,15 +165,17 @@
                                 </li>
                             </ul>
                         </li>
-                
+                    
                         <li class="nav-item"><a class="nav-link" href="contact.html">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                     </ul>
-                    <a href="contact.html" class="quote-btn">Get a Quote</a>
+                    <a href="contact.html" class="d-none d-lg-block quote-btn">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
+
+    
 
 
 
@@ -193,15 +190,12 @@
             <div class="overlay"></div>
         </div>
         <div class="container content-header">
-            <h1>Solution for challenging situation</h1>
+            <h1 id="animated-heading">Solution for challenging situation</h1>
             <p>Our range of high-precision scanners and measurement devices provide accurate data capture for diverse applications, including product design, manufacturing, automotive, aerospace, and more.</p>
             <div class="d-flex contact-btn">
-                
-                <a href="#" class="btn left">View our servicce</a>
-
+                <a href="contact.html" class="btn left">View our service</a>
                 <span class="d-flex align-items-center right"><i class="fa-solid fa-arrow-right"></i></span>
             </div>
-            
         </div>
     </header>
     
@@ -224,7 +218,7 @@
                 <div class="line"></div>
                 <p>Original manufacturers may no longer produce critical pump spares or 
                     shafts.</p>
-                <button class="quote-btn">Find our More</button>
+                <a href="contact.html" class="quote-btn">Find our More</a>
             </div>
 
             <div class="feature">
@@ -234,7 +228,7 @@
                 <div class="line"></div>
                 <p>Original manufacturers may no longer produce critical pump spares or 
                     shafts.</p>
-                <button class="quote-btn">Find our More</button>
+                <a href="contact.html" class="quote-btn">Find our More</a>
             </div>
 
             <div class="feature">
@@ -244,7 +238,7 @@
                 <div class="line"></div>
                 <p>Original manufacturers may no longer produce critical pump spares or 
                     shafts.</p>
-                <button class="quote-btn">Find our More</button>
+                <a href="contact.html" class="quote-btn">Find our More</a>
             </div>
 
             <div class="feature">
@@ -253,7 +247,7 @@
                 <div class="line"></div>
                 <p>Original manufacturers may no longer produce critical pump spares or 
                     shafts.</p>
-                <button class="quote-btn">Find our More</button>
+                <a href="contact.html" class="quote-btn">Find our More</a>
             </div>
             
         </div>
@@ -274,7 +268,7 @@
         <div class="container-fluid about_section">
             <div class="container about-div-content d-flex gap-5">
                 <!-- Left Side - Image -->
-                <div class="">
+                <div class="col-md-6">
                     <img src="../web/assets/img/about_banner.avif" alt="About Us" class="about-img">
                 </div>
                 
@@ -292,7 +286,7 @@
                     </ul>
         
                     <!-- Contact Button -->
-                    <button class="quote-btn">Get a Quote</button>
+                    <a href="contact.html" class="quote-btn">Contact us</a>
                 </div>
             </div>
         </div>
@@ -523,6 +517,27 @@
 
 
 
+    <!-- script for animated heading -->
+
+
+    <script>
+        const texts = [
+                "Solution for challenging situation",
+                "Reverse engineering products",
+                "Advanced technology for precision",
+              
+            ];
+            let currentTextIndex = 0;
+
+            const headingElement = document.getElementById('animated-heading');
+
+            function changeText() {
+                currentTextIndex = (currentTextIndex + 1) % texts.length;  // Loop back after the last text
+                headingElement.textContent = texts[currentTextIndex];
+            }
+
+            setInterval(changeText, 4000);  // Change text every 4 seconds
+    </script>
 
 
 

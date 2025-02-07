@@ -139,7 +139,7 @@
 
 
    /* Initial transparent navbar */
-   .navbar-custom {
+.navbar-custom {
     transition: all 0.3s ease-in-out;
 }
 /* Navbar after scrolling */
@@ -158,9 +158,46 @@
 /* Top navbar styling */
 .top-nav {
    
-    font-size: 14px;
-    border-bottom: solid 1px #ffffff3d;
+       
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+
     
+}
+
+
+
+@media only screen and (max-width: 768px) { 
+
+    .navbar-toggler{
+
+        border: none !important;
+    }
+
+    .navbar-collapse{
+
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .bottom-nav .nav-link {
+        color: black !important;
+        transition: color 0.3s;
+    }
+
+    .quote-btn{
+
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+
+  
+
+
 }
 
 .top-nav-item{
@@ -426,12 +463,42 @@
     margin-left: 5%; /* Align left */
 }
 
+
+
+
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  #animated-heading {
+    display: inline-block;
+    animation: fadeInOut 2s ease-in-out infinite;
+
+
+   
+  }
+
 .content-header h1{
 
     font-size: 4rem;
     font-weight: 900;
     width: 50%;
 }
+
+
+
 
 .content-header p{
 
