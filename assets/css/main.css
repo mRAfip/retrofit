@@ -285,6 +285,8 @@
         .dropdown-item {
             position: relative;
             padding: 10px 15px !important;
+            position: relative !important;
+    z-index: 10;
         }
 
         .dropdown-item:hover{
@@ -292,42 +294,39 @@
             background-color: #fff !important;
         }
 
-        /* On hover, add a small green line under the item */
+
+
+       
         .dropdown-item:hover::after {
             content: "";
             position: absolute;
-            bottom: 0; /* Position the line at the bottom of the item */
-            left:38px; /* Center the line horizontally */
-            transform: translateX(-50%); /* Offset to truly center the line */
-            width: 50px; /* Width of the line */
-            height: 2px; /* Height of the line */
-            background-color: var(--brand-green); /* Color of the line */
-            transition: width 0.3s ease; /* Smooth transition for the line's appearance */
+            left:38px; 
+            transform: translateX(-50%); 
+            width: 50px; 
+            height: 2px; 
+            background-color: #05D3AA !important;
+            bottom: -4px; 
+            transition: width 0.3s ease, left 0.3s ease;
         }
 
 
-                /* On hover, add a small green line under the item */
-        .sub-menu .dropdown-item:hover::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0; /* Position the line at the bottom of the item */
-                    left:38px; /* Center the line horizontally */
-                    transform: translateX(-50%); /* Offset to truly center the line */
-                    width: 50px; /* Width of the line */
-                    height: 2px; /* Height of the line */
-                    background-color: var(--brand-green); /* Color of the line */
-                    transition: width 0.3s ease; /* Smooth transition for the line's appearance */
-                }
+        /* Green underline effect for dropdown and submenu items */
 
-        /* Optional: Change text color on hover (for a better hover effect) */
-        .dropdown-item:hover {
-            color: #007bff; /* Change text color when hovered */
-        }
+        /* Remove default dropdown caret for submenu parent */
+.dropdown-submenu > .dropdown-toggle::after {
+    border-top: 2px solid transparent !important; /* Change arrow color */
+}
 
-        /* Handle the dropdown-menu submenu properly */
-        .dropdown-menu {
-            padding-left: 20px; /* Add a bit of space for submenus */
-        }
+
+
+
+
+
+
+/* Handle the dropdown-menu submenu properly */
+.dropdown-menu {
+    padding-left: 20px; /* Add a bit of space for submenus */
+}
 
 
 
