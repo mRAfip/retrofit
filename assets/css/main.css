@@ -153,6 +153,14 @@
     transition: padding 0.3s ease-in-out;
 }
 
+@media (max-width: 767px) {
+   
+    .top-nav, .bottom-nav {
+        padding: 15px 5px;
+        transition: padding 0.3s ease-in-out;
+    }
+}
+
 
 
 /* Top navbar styling */
