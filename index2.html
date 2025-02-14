@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main2.css">
+
+    <!-- boostrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- font  -->
+<link href='https://fonts.googleapis.com/css?family=Red Hat Display' rel='stylesheet'>
+
+
+    <!-- flat icon -->
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9495126256" target="_blank" class="whatsapp-float-btn">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+</head>
+<body>
+
+
+    <!-- Navbar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container navbar-content">
+            <!-- Top Section -->
+            <div class="top-nav d-flex align-items-center justify-content-between w-100">
+                <!-- Left Section: Logo -->
+                <div class="ms-3">
+                    <a href="index.html" class="navbar-brand">
+                        <img class="logo" src="./assets/img/logo-light.png" />
+                    </a>
+                </div>
+    
+                <!-- Right Section: Contact Info, only visible on large screens -->
+                <div class="me-3 d-none d-lg-flex align-items-center top-nav-right-items">
+                    <!-- item 1 -->
+                    <span class="nav-link top-nav-item d-flex align-items-center me-3">
+                        <div class="top-nav-item-left d-flex align-items-center">
+                            <a href="contact.html" class="d-none d-lg-block quote-btn">Contact</a>
+                        </div>
+                        <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
+                        </div>
+                    </span>
+    
+                    <!-- item 2 -->
+                    <span class="nav-link top-nav-item d-flex align-items-center me-3">
+                        <div class="top-nav-item-left d-flex align-items-center">
+                            <i class="fa-solid fa-map-location-dot top-nav-item-icon"></i>
+                        </div>
+                        <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
+                            <span class="small top-nav-item-link">Come & Visit us</span>
+                            <span class="top-nav-item-link">Covai Tech Park</span>
+                        </div>
+                    </span>
+    
+                    <!-- item 3 -->
+                    <span class="nav-link top-nav-item d-flex align-items-center me-3">
+                        <div class="top-nav-item-left d-flex align-items-center">
+                            <i class="fa-regular fa-envelope top-nav-item-icon"></i>
+                        </div>
+                        <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
+                            <span class="small top-nav-item-link">Email us</span>
+                            <span class="top-nav-item-link">info@rettrofit.com</span>
+                        </div>
+                    </span>
+                </div>
+    
+                <!-- Right Section: Menu Button for Mobile -->
+                <div class="d-lg-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Bottom Navbar -->
+            <div class="container px-3 bottom-nav">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        
+                        <!-- Products Dropdown with Submenus -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="contact.html" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item " href="contact.html">Comprehensive Analysis</a>
+                                    <!--<ul class="dropdown-menu sub-menu">-->
+                                    <!--    <li><a class="dropdown-item" href="contact.html">Inspection</a></li>-->
+                                    <!--    <li><a class="dropdown-item" href="contact.html">Data Acquisition</a></li>-->
+                                    <!--</ul>-->
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item " href="contact.html">CAD Model Creation</a>
+                                    <!--<ul class="dropdown-menu sub-menu">-->
+                                    <!--    <li><a class="dropdown-item" href="contact.html">3D Modeling</a></li>-->
+                                    <!--    <li><a class="dropdown-item" href="contact.html">FEA Analysis</a></li>-->
+                                    <!--</ul>-->
+                                </li>
+    
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="contact.html">Manufacturing</a>
+                                    <!--<ul class="dropdown-menu sub-menu">-->
+                                    <!--    <li><a class="dropdown-item" href="contact.html">Precise Manufacturing</a></li>-->
+                                    <!--    <li><a class="dropdown-item" href="contact.html">Quality Control</a></li>-->
+                                    <!--</ul>-->
+                                </li>
+    
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="contact.html">Casting process. Investment casting</a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li><a class="dropdown-item" href="contact.html">Pattern Making</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Shell Mold Creation</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Wax Removal</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Metal Pouring</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Cooling and Solidification</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Shell Removal</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Finishing and Inspection</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <!-- Services Dropdown with Submenus -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="contact.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="contact.html">Impellers</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="contact.html">Radial Flow Impellers</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Axial Flow Impellers:</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="contact.html">Mixed Flow Impellers</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Open Impellers</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="contact.html">Closed Impellers</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="contact.html">Semi-Open Impellers</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="contact.html">Vortex Impellers</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="contact.html">Helical Rotor Impellers</a></li>
+                                        
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="contact.html">RO Pressure Vessel Spares</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="contact.html">O-rings and Head Seals</a></li>
+                                        <li><a class="dropdown-item" href="#">RO Pressure Vessel End Caps</a></li>
+                                        
+                                         <li><a class="dropdown-item" href="#">Flow Restrictors</a></li>
+                                         
+                                          <li><a class="dropdown-item" href="#">Feed and Brine reject Ports :</a></li>
+                                          
+                                           <li><a class="dropdown-item" href="#">Permeate Adaptors</a></li>
+                                           
+                                            <li><a class="dropdown-item" href="#">Retaining Ring</a></li>
+                                            
+                                             <li><a class="dropdown-item" href="#">RO Permeate Port. Water Outlet</a></li>
+                                             
+                                           
+                                                
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li class="nav-item"><a class="nav-link" href="contact.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+
+
+
+
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="video-container">
+            <!-- <video autoplay muted loop playsinline>
+                <source src="./assets/img/video/banner.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+            <div class="overlay"></div>
+        </div>
+        <div class="container content-header">
+            <h1 id="animated-heading">Solution for challenging situation</h1>
+            <p>Our range of high-precision scanners and measurement devices provide accurate data capture for diverse applications, including product design, manufacturing, automotive, aerospace, and more.</p>
+            <div class="d-flex contact-btn">
+                <a href="contact.html" class="btn left">View our service</a>
+                <span class="d-flex align-items-center right"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <!-- start chalenges we solve  -->
+
+
+    <section class="container chalenges_section">
+
+        <h2 class="chalenges_section_title text-center">Challenges we solve</h2>
+        <p class="text-center">We embrace complex challenges as opportunities for innovation, developing cutting-edge solutions that redefine what's possible.</p>
+       
+       
+        <div class="d-flex flex-column flex-lg-row align-items-center text-center mt-5 gap-5">
+            <div class="feature">
+                
+                <i class="fa-solid fa-dumpster-fire challenge-item-icon"></i>
+                <h4 class="mt-3">Obsoleted Parts</h4>
+                <div class="line"></div>
+                <p>Original manufacturers may no longer produce critical pump spares or 
+                    shafts.</p>
+                <a href="contact.html" class="quote-btn">Find our More</a>
+            </div>
+
+            <div class="feature">
+             
+                <i class="fa-solid fa-circle-exclamation challenge-item-icon"></i>
+                <h4 class="mt-3">Damaged Parts</h4>
+                <div class="line"></div>
+                <p>Original manufacturers may no longer produce critical pump spares or 
+                    shafts.</p>
+                <a href="contact.html" class="quote-btn">Find our More</a>
+            </div>
+
+            <div class="feature">
+                
+                <i class="fa-solid fa-compass-drafting challenge-item-icon"></i>
+                <h4 class="mt-3">Lack of Drawings</h4>
+                <div class="line"></div>
+                <p>Original manufacturers may no longer produce critical pump spares or 
+                    shafts.</p>
+                <a href="contact.html" class="quote-btn">Find our More</a>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-seedling challenge-item-icon"></i>
+                <h4 class="mt-3">Urgent Needs</h4>
+                <div class="line"></div>
+                <p>Original manufacturers may no longer produce critical pump spares or 
+                    shafts.</p>
+                <a href="contact.html" class="quote-btn">Find our More</a>
+            </div>
+            
+        </div>
+
+        
+    </section>
+
+
+
+
+    <!-- about section -->
+
+
+
+
+    <section class="w-100 company-details">
+
+        <div class="container-fluid about_section">
+            <div class="container about-div-content d-flex gap-5">
+                <!-- Left Side - Image -->
+                <div class="col-md-6">
+                    <img src="../web/assets/img/about_banner.avif" alt="About Us" class="about-img">
+                </div>
+                
+                <!-- Right Side - Content -->
+                <div class=" about-content">
+                    <p class="highlight-text ">Our solutions and services</p>
+                    <h2 class="about_text">Reverse Engineering Expertise</h2>
+                    <p>We specialize in reverse engineering pump spares and shafts to overcome challenges like obsolete parts, long lead times, and escalating costs.  Our reverse engineering expertise allows us to quickly and accurately reproduce critical components, keeping your pumps running smoothly and minimizing downtime.</p>
+        
+                    <!-- Features List -->
+                    <ul class="feature-list">
+                        <li><i class="fa-regular fa-circle-check "></i> High-Quality Services</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Customer-Centric Approach</li>
+                        <li><i class="fa-regular fa-circle-check "></i>Experienced Team</li>
+                    </ul>
+        
+                    <!-- Contact Button -->
+                    <a href="contact.html" class="quote-btn">Contact us</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- section vission and mission -->
+
+        <div class="container-fluid section_misson">
+
+            <div class="div_mission container d-flex gap-5">
+
+                <div class="mision_item">
+
+                        <h4>Our mission</h4>
+                        <p>Our mission is to deliver innovative, reliable, and cost-effective solutions that empower our clients to achieve their operational goals. We are committed to sustainability, quality, and customer satisfaction, ensuring that every product and service we provide adds value to your business.</p>
+                </div>
+
+                <div class="mision_item">
+
+                    <h4>Our mission</h4>
+                    <p>Our mission is to deliver innovative, reliable, and cost-effective solutions that empower our clients to achieve their operational goals. We are committed to sustainability, quality, and customer satisfaction, ensuring that every product and service we provide adds value to your business.</p>
+            </div>
+
+
+            <div class="mision_item">
+
+                    <div class="mission_card">
+
+                        <div class="mision_card_content">
+                            <p> Contact us today to learn more about how we can support your business. RettroFit – Engineering Excellence, Delivered.</p>
+                        </div>
+
+                    </div>
+
+            </div>
+
+  
+
+
+   </div>
+
+        </div>
+
+
+        <div class="container-fluid company_high_light">
+
+           
+            <div class="container">
+
+                <div class="d-flex flex-column flex-lg-row align-items-center text-center gap-5">
+
+
+                    <div class="company_high_light_content">
+                        
+                        <div class="icon_container">
+                            <i class="fi fi-rs-user-helmet-safety company_high_light_content_icon"></i>
+                        </div>
+                        <h4 class="mt-3">Construction</h4>
+                      
+                        <p>Fulfilling client requests on the go</p>
+                       
+                    </div>
+
+                    <div class="company_high_light_content">
+                        
+                        <div class="icon_container">
+                            <i class="fa-solid fa-diagram-project company_high_light_content_icon"></i>
+
+                        </div>
+                        <h4 class="mt-3">Production</h4>
+                      
+                        <p>Manufacturing the requested product</p>
+                       
+                    </div>
+
+                    <div class="company_high_light_content">
+                        
+                        <div class="icon_container">
+                            <i class="fa-regular fa-clock company_high_light_content_icon"></i>
+
+                        </div>
+                        <h4 class="mt-3">Deadline</h4>
+                      
+                        <p>Finishing upon requested time</p>
+                       
+                    </div>
+
+                    <div class="company_high_light_content">
+                        
+                        <div class="icon_container">
+                            <i class="fa-regular fa-handshake company_high_light_content_icon"></i>
+                        </div>
+                        <h4 class="mt-3">Satisfaction</h4>
+                      
+                        <p>Purchasing quality product</p>
+                       
+                    </div>
+    
+                    
+                </div>
+        
+
+            </div>
+
+            
+        
+          
+            
+        </div>
+
+      
+
+    </section>
+
+
+        <!-- about section -->
+
+    
+    <section class="testimonial container">
+
+        <div class="head">
+            <p class="highlight-text">Our solutions and services</p>
+            <h2 class="about_text">Reverse Engineering Expertise</h2>
+            <p>We specialize in reverse engineering pump spares and shafts to overcome challenges like obsolete parts, long lead times, and escalating costs.  Our reverse engineering expertise allows us to quickly and accurately reproduce critical components, keeping your pumps running smoothly and minimizing downtime.</p>
+        
+
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Testimonial Card 1 -->
+                <div class="col-md-6">
+                    <div class="shadow-sm testi_card">
+                        <h5 class="card-title">Excellent Service!</h5>
+                        <div class="mb-2">
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius justo eu augue commodo, et scelerisque ex cursus.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="me-3">
+                                <img src="./assets/img/pro1.jpg" class="rounded-circle" alt="Profile Image">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">John Doe</h6>
+                                <small class="text-muted">CEO, Company X</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial Card 2 -->
+                <div class="col-md-6">
+                    <div class="testi_card shadow-sm">
+                        <h5 class="card-title">Amazing Experience!</h5>
+                        <div class="mb-2">
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="me-3">
+                                <img src="./assets/img/pro2.avif" class="rounded-circle" alt="Profile Image">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Jane Smith</h6>
+                                <small class="text-muted">Marketing Head, Company Y</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer  -->
+
+
+    <footer class="footer text-white pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+                
+                <!-- First Column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <a class="mb-4"><img class="logo" src="./assets/img/logo-light.png"/></a>
+                    <p>We specialize in reverse engineering pump spares and shafts to overcome these challenges</p>
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Our Services</h5>
+                    <p><a href="#" class="text-white text-decoration-none">Comprehensive Analysis</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">CAD Model Creation</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Manufacturing</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Casting process. Investment casting
+                    </a></p>
+                </div>
+
+                <!-- Third Column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Company</h5>
+                    <p><a href="#" class="text-white text-decoration-none">About Us</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Careers</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Terms of Service</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+                </div>
+
+                <!-- Fourth Column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Covai Tech Park,Coimbatore 641014 </p>
+                    <p><i class="fas fa-phone me-2"></i> +91 9495 126 256</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@rettrofit.com</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 retrofit. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- script for animated heading -->
+
+
+    <script>
+        const texts = [
+                "Solution for challenging situation",
+                "Reverse engineering products",
+                "Advanced technology for precision",
+              
+            ];
+            let currentTextIndex = 0;
+
+            const headingElement = document.getElementById('animated-heading');
+
+            function changeText() {
+                currentTextIndex = (currentTextIndex + 1) % texts.length;  // Loop back after the last text
+                headingElement.textContent = texts[currentTextIndex];
+            }
+
+            setInterval(changeText, 4000);  // Change text every 4 seconds
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <!-- script for toggle -->
+
+    <script>
+        function toggleMobileMenu() {
+            var menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+
+
+
+
+    <!-- JavaScript to Change Navbar Background on Scroll -->
+    <script>
+        window.addEventListener("scroll", function() {
+            let navbar = document.querySelector(".navbar-custom");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+
+
+
+
+<!-- this script for changinng logo while scrolling  -->
+
+    <script>
+
+        window.addEventListener("scroll", function () {
+            let navbar = document.querySelector(".navbar-custom");
+            let logo = document.querySelector(".logo");
+
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+                logo.src = "./assets/img/logo.png"; // Change to dark logo
+            } else {
+                navbar.classList.remove("scrolled");
+                logo.src = "./assets/img/logo-light.png"; // Restore light logo
+            }
+        });
+    </script>
+    
+
+
+    <!-- boostrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

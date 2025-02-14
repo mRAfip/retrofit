@@ -30,6 +30,7 @@
 <body>
 
 
+
     <!-- Navbar -->
 
 
@@ -49,11 +50,9 @@
                     <!-- item 1 -->
                     <span class="nav-link top-nav-item d-flex align-items-center me-3">
                         <div class="top-nav-item-left d-flex align-items-center">
-                            <i class="fas fa-phone top-nav-item-icon"></i>
+                            <a href="contact.html" class="d-none d-lg-block quote-btn">Contact</a>
                         </div>
                         <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
-                            <span class="small top-nav-item-link">Give us a call</span>
-                            <span class="top-nav-item-link">+91 9495 126 256</span>
                         </div>
                     </span>
     
@@ -64,7 +63,7 @@
                         </div>
                         <div class="d-flex flex-column align-items-start top-nav-item-left ms-2">
                             <span class="small top-nav-item-link">Come & Visit us</span>
-                            <span class="top-nav-item-link">Covai Tech Park, Coimbatore 641014</span>
+                            <span class="top-nav-item-link">Covai Tech Park</span>
                         </div>
                     </span>
     
@@ -191,11 +190,11 @@
                         <li class="nav-item"><a class="nav-link" href="contact.html">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                     </ul>
-                    <a href="contact.html" class="d-none d-lg-block quote-btn">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
+
     
         <!-- Header Section -->
         <header class="header-section_contact">
@@ -215,42 +214,78 @@
                             <div class="mb-3">
                                 <label class="form-label">Name</label>
                                 <input type="text" class="form-control" id="name" required>
+                                <small class="error-message" id="nameError"></small>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="c_name" required>
+                                <small class="error-message" id="cNameError"></small>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Designation</label>
+                                <input type="text" class="form-control" id="designation" required>
+                                <small class="error-message" id="designationError"></small>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" required>
+                                <small class="error-message" id="emailError"></small>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Contact Number</label>
                                 <input type="text" class="form-control" id="contact" required>
+                                <small class="error-message" id="contactError"></small>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Service</label>
-                                <select class="form-control" id="service">
-                                    <option>Comprehensive Analysis</option>
-                                    <option>CAD Model Creation</option>
-                                    <option>Manufacturing</option>
-                                    <option>Casting process. Investment casting</option>
-                                </select>
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                                <small class="error-message" id="messageError"></small>
                             </div>
-                            <button type="button" class="quote-btn contact_btn" onclick="sendToWhatsApp()">Submit</button>
+                            <button type="button" class="quote-btn contact_btn" onclick="validateForm()">Submit</button>
                         </form>
+                        
                     </div>
         
                     <!-- Right Column: Contact Info -->
                     <div class="col-md-6 right-column">
                         <div class="mb-3 right-column-item">
                             
-                            <a> 123 Main Street, City, Country</a>
-                            <span class="icon-box"><i class="fas fa-map-marker-alt"></i></span>
+                            <a> India</a>
+                            <span class="icon-box"><img src="./assets/img/icons/india.png"/></span>
                         </div>
+                       
                         <div class="mb-3 right-column-item">
-                             +123 456 7890
+                            
+                            <a> UAE</a>
+                            <span class="icon-box"><img src="./assets/img/icons/uae.png"/></span>
+                        </div>
+
+                        <div class="mb-3 right-column-item">
+                            
+                            <a> Qatar</a>
+                            <span class="icon-box"><img src="./assets/img/icons/qatar.png"/></span>
+                        </div>
+
+                        <div class="mb-3 right-column-item">
+                            
+                            <a> Bahrain</a>
+                            <span class="icon-box"><img src="./assets/img/icons/bahrain.png"/></span>
+                        </div>
+
+                        <div class="mb-3 right-column-item">
+                            
+                            <a> Saudi Arabia</a>
+                            <span class="icon-box"><img src="./assets/img/icons/soudhi.png"/></span>
+                        </div>
+
+
+                        <div class="mb-3 right-column-item">
+                             +91 6282 076690
                             <span class="icon-box"><i class="fas fa-phone"></i></span>
 
                         </div>
                         <div class="mb-3 right-column-item">
-                            info@example.com
+                            info@rettrofit.com
                             <span class="icon-box"><i class="fas fa-envelope"></i></span>
 
                         </div>
@@ -263,60 +298,6 @@
 
 
 
-
-            <!-- start chalenges we solve  -->
-
-
-    <section class="container chalenges_section">
-
-        <h2 class="chalenges_section_title text-center">Challenges we solve</h2>
-        <p class="text-center">We embrace complex challenges as opportunities for innovation, developing cutting-edge solutions that redefine what's possible.</p>
-       
-       
-        <div class="d-flex flex-column flex-lg-row align-items-center text-center mt-5 gap-5">
-            <div class="feature">
-                
-                <i class="fa-solid fa-dumpster-fire challenge-item-icon"></i>
-                <h4 class="mt-3">Obsoleted Parts</h4>
-                <div class="line"></div>
-                <p>Original manufacturers may no longer produce critical pump spares or 
-                    shafts.</p>
-                <a href="contact.html" class="quote-btn">Find our More</a>
-            </div>
-
-            <div class="feature">
-             
-                <i class="fa-solid fa-circle-exclamation challenge-item-icon"></i>
-                <h4 class="mt-3">Damaged Parts</h4>
-                <div class="line"></div>
-                <p>Original manufacturers may no longer produce critical pump spares or 
-                    shafts.</p>
-                <a href="contact.html" class="quote-btn">Find our More</a>
-            </div>
-
-            <div class="feature">
-                
-                <i class="fa-solid fa-compass-drafting challenge-item-icon"></i>
-                <h4 class="mt-3">Lack of Drawings</h4>
-                <div class="line"></div>
-                <p>Original manufacturers may no longer produce critical pump spares or 
-                    shafts.</p>
-                <a href="contact.html" class="quote-btn">Find our More</a>
-            </div>
-
-            <div class="feature">
-                <i class="fa-solid fa-seedling challenge-item-icon"></i>
-                <h4 class="mt-3">Urgent Needs</h4>
-                <div class="line"></div>
-                <p>Original manufacturers may no longer produce critical pump spares or 
-                    shafts.</p>
-                <a href="contact.html" class="quote-btn">Find our More</a>
-            </div>
-            
-        </div>
-
-        
-    </section>
 
 
 
@@ -386,8 +367,8 @@
                         <!-- Fourth Column -->
                         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                             <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
-                            <p><i class="fas fa-map-marker-alt me-2"></i>Covai Tech Park,Coimbatore 641014 </p>
-                            <p><i class="fas fa-phone me-2"></i> +91 9495 126 256</p>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>Covai Tech Park,Coimbatore  </p>
+                            <p><i class="fas fa-phone me-2"></i> +91 6282 076 690</p>
                             <p><i class="fas fa-envelope me-2"></i> info@rettrofit.com</p>
                         </div>
                     </div>
@@ -399,6 +380,14 @@
                     </div>
                 </div>
             </footer>
+
+
+
+
+
+
+
+
         
 
 
@@ -438,17 +427,88 @@
     
 
         <script>
-            function sendToWhatsApp() {
-                var name = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
-                var contact = document.getElementById("contact").value;
-                var service = document.getElementById("service").value;
-                
-                var message = `Hello, my name is ${name}. My email is ${email} and my contact number is ${contact}. I am interested in ${service}.`;
-                var whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
-                
-                window.open(whatsappUrl, "_blank");
+
+            function validateForm() {
+                let isValid = true;
+
+                // Clear previous error messages
+                document.querySelectorAll('.error-message').forEach(el => {
+                    el.style.display = 'none';
+                    el.innerText = "";
+                });
+
+                // Get input values
+                let name = document.getElementById("name").value.trim();
+                let c_name = document.getElementById("c_name").value.trim();
+                let designation = document.getElementById("designation").value.trim();
+                let email = document.getElementById("email").value.trim();
+                let contact = document.getElementById("contact").value.trim();
+                let message = document.getElementById("message").value.trim();
+
+                // Validation checks
+                if (name === "") {
+                    showError("nameError", "This field is required.");
+                    isValid = false;
+                }
+                if (c_name === "") {
+                    showError("cNameError", "This field is required.");
+                    isValid = false;
+                }
+                if (designation === "") {
+                    showError("designationError", "This field is required.");
+                    isValid = false;
+                }
+                if (email === "" || !validateEmail(email)) {
+                    showError("emailError", "Enter a valid email.");
+                    isValid = false;
+                }
+                if (contact === "" || !validatePhone(contact)) {
+                    showError("contactError", "Enter a valid 10-digit phone number.");
+                    isValid = false;
+                }
+                if (message === "") {
+                    showError("messageError", "This field is required.");
+                    isValid = false;
+                }
+
+                // Submit if valid
+                if (isValid) {
+                    sendToWhatsApp(name, c_name, designation, email, contact, message);
+                }
             }
+
+            // Function to show error message
+            function showError(id, msg) {
+                let errorElement = document.getElementById(id);
+                errorElement.innerText = msg;
+                errorElement.style.color = "red";
+                errorElement.style.display = "block";
+            }
+
+            // Email validation function
+            function validateEmail(email) {
+                let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return pattern.test(email);
+            }
+
+            // Phone number validation (10-digit numbers)
+            function validatePhone(phone) {
+                let pattern = /^[0-9]{10}$/;
+                return pattern.test(phone);
+            }
+
+            // Function to send details to WhatsApp
+            function sendToWhatsApp(name, c_name, designation, email, contact, message) {
+                let whatsappMessage = `Hello, my name is ${name}. 
+            I work at ${c_name} as a ${designation}. 
+            My email is ${email} and my contact number is ${contact}. 
+            Here is my message: ${message}`;
+
+                let whatsappUrl = `https://wa.me/7907977521?text=${encodeURIComponent(whatsappMessage)}`;
+                window.open(whatsappUrl, '_blank');
+            }
+
+
         </script>
         
         <!-- boostrap -->

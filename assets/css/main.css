@@ -134,7 +134,7 @@
 
 .logo{
 
-    height: 80px;
+    height: 70px;
 }
 
 
@@ -149,7 +149,7 @@
 }
 
 .top-nav, .bottom-nav {
-    padding: 15px 15px;
+    padding: 5px 15px;
     transition: padding 0.3s ease-in-out;
 }
 
@@ -249,11 +249,14 @@
     .bottom-nav .nav-link {
         color: #fff; /* Default text color */
         transition: background-color 0.3s ease, color 0.3s ease;
+        background-color: var(--brand-green); /* Change this to your desired background color */
+        margin-right: 10px;
+        border-radius: 5px;
     }
 
     /* On hover, background color changes */
     .bottom-nav .nav-link:hover {
-        background-color: var(--brand-green); /* Change this to your desired background color */
+        background-color: var(--brand-blue); /* Change this to your desired background color */
         color: white !important; /* Text color when active */
         border-radius: 5px;
     }
@@ -372,9 +375,20 @@
     align-items: center;
     justify-content: center;
     color: white;
+ 
 
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(19, 23, 255, 0.2); */
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 200px   0;
+}
 
 
 
@@ -451,16 +465,7 @@
     border-radius: 0 0 200px   0;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(19, 23, 255, 0.2);
-    /* background: rgba(255, 255, 255, 0.2); */
-    border-radius: 0 0 200px   0;
-}
+
 
 .content-header {
     position: relative;
@@ -468,6 +473,7 @@
     color: white;
     max-width: 600px;
     margin-left: 5%; /* Align left */
+    margin-top: 10%;
 }
 
 
@@ -497,9 +503,18 @@
    
   }
 
+  .content-header{
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    text-align: right;
+  }
+
 .content-header h1{
 
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     width: 50%;
 }
@@ -512,6 +527,7 @@
     opacity: 0.6;
     width: 50%;
     margin-top: 2%;
+    
 }
 
 .contact-btn{
@@ -563,7 +579,7 @@
     }
     .content-header h1{
 
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 900;
         width: 80%;
     }
@@ -590,22 +606,57 @@
  ***/
 
 
- .chalenges_section{
+ .scroll-container {
+    overflow-x: auto; 
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+}
 
-    padding: 100px 0;
- }
+.d-flex {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+   
+}
 
- .chalenges_section_title{
+.feature {
+    min-width: 280px; /* Adjust width as needed */
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    text-align: center;
+    padding: 10px;
+    background: #ffffff1c !important;
+    border-radius: 10px;
+}
 
-    font-size: 3rem;
-    font-weight: 600;
- }
+.feature p{
+    width: 100%;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+}
+
+
+.swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    min-width: 280px; /* Adjust as needed */
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.swiper-pagination {
+    margin-top: 10px;
+}
+
 
  .challenge-item-icon {
 
-
-
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--brand-green);
 
  }
@@ -697,6 +748,13 @@
     font-weight: bold;
 }
 
+.highlight-text-bg {
+    color:#fff;
+    background-color: #05D3AA;
+    font-weight: bold;
+    padding: 0 5px;
+   
+}
 .about-content p {
     width: 80%;
 }
@@ -726,7 +784,7 @@
 
 .div_mission{
 
-    padding: 150px 0;
+    padding: 100px 0;
     background-color: transparent;
 
   

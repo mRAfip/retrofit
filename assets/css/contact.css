@@ -79,9 +79,17 @@
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents image repetition */
     color: #fff !important;
+
 }
 
 
+
+
+.error-message {
+    color: #F1B209;
+    font-size: 0.875rem;
+    display: none;
+}
 
 
 @media only screen and (max-width: 768px) { 
@@ -125,8 +133,8 @@
 
 
 .icon-box {
-    background-color: #F1B209;
-    color: white;
+    background-color: #fff;
+    color: #F1B209;
 
     border-radius: 5px;
     margin-left: 10px;
@@ -137,10 +145,14 @@
     justify-content: center;
     align-items: center;
 }
+.icon-box img{
+
+    height: 45px;
+}
 .right-column {
     text-align: right;
     display: flex;
-    justify-content: center;
+    justify-content: sta;
     align-items: end;
 
     flex-direction: column;
@@ -158,6 +170,7 @@
     background-color: transparent !important;
     height: 60px;
     color: #fff !important;
+    width: 80% !important;
 }
 
 
@@ -169,6 +182,7 @@
         background-color: transparent !important;
         height: 60px;
         color: #fff !important;
+        width: 100% !important;
     }
 
 
@@ -197,4 +211,9 @@
 
     background-color: #F1B209 !important;
     border-radius: 10px !important;
+}
+
+.about_section{
+
+    margin-top: 100px !important;
 }
