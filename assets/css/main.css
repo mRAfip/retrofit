@@ -270,6 +270,19 @@
         border-radius: 5px;
     }
 
+
+    @media only screen and (max-width: 768px) { 
+
+
+         /* Default state of nav-link */
+    .bottom-nav .nav-link {
+       
+        background-color: #fff /* Change this to your desired background color */
+
+    }
+
+    }
+
     /* On hover, background color changes */
     .bottom-nav .nav-link:hover {
         background-color: var(--brand-blue); /* Change this to your desired background color */
@@ -929,7 +942,7 @@
 
  .testimonial{
 
-    padding: 200px 0;
+    padding: 100px 0;
  }
 
  .head{
