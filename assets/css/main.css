@@ -191,6 +191,10 @@
     
 }
 
+.navbar-toggler-icon {
+    background-image: url("../img/icons/menu.png") !important;
+}
+
 
 
 @media only screen and (max-width: 768px) { 
@@ -198,6 +202,7 @@
     .navbar-toggler{
 
         border: none !important;
+        background-color: #fff;
     }
 
     .navbar-collapse{
@@ -630,6 +635,12 @@
     .swiper-container{
 
         padding: 0;
+    }
+
+
+    .navbar-toggler-icon{
+
+
     }
     
 }
