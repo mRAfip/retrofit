@@ -411,6 +411,10 @@
     object-fit: cover;
 }
 
+.primary-blue{
+
+    background-color: var(--brand-blue) !important;
+}
 
 @media only screen and (max-width: 768px) { 
 
